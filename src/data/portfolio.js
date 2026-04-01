@@ -9,6 +9,8 @@ export const siteMeta = {
     'My work focuses on data modeling, transformations, and data quality, with hands-on experience in AWS and Google Cloud.',
 };
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const skillSet = [
   'Python',
   'SQL',
@@ -37,7 +39,7 @@ export const contactLinks = [
   {
     label: 'Resume',
     sublabel: 'Download PDF',
-    href: '/Michael_DE.pdf',
+    href: withBase('Michael_DE.pdf'),
     icon: 'resume',
   },
   {

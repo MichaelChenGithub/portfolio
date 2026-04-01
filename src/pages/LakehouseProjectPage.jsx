@@ -1,6 +1,8 @@
 import { lakehouseProject } from '../data/portfolio';
 import { LakehouseDiagram } from '../components/LakehouseDiagram';
 
+const airflowDagImageSrc = `${import.meta.env.BASE_URL}airflow-batch-publish-dag.png`;
+
 export function LakehouseProjectPage() {
 const runtimeChecks = [
   'all required verifier artifacts were parseable',
@@ -299,7 +301,7 @@ export function LakehouseProjectPage() {
           <figure className="lakehouse-showcase-figure">
             <img
               className="lakehouse-evidence-image"
-              src="/airflow-batch-publish-dag.png"
+              src={airflowDagImageSrc}
               alt="Airflow graph view for batch_publish_daily DAG run with successful tasks"
               loading="lazy"
             />

@@ -4,6 +4,8 @@ import { ContactLinks } from '../components/ContactLinks';
 import { LakehouseDiagram } from '../components/LakehouseDiagram';
 import { projectBySlug } from '../data/portfolio';
 
+const airflowDagImageSrc = `${import.meta.env.BASE_URL}airflow-batch-publish-dag.png`;
+
 const recruiterPrompts = [
   {
     label: 'Ownership',
@@ -211,7 +213,7 @@ export function ProjectDetailPage() {
                 <figure className="project-article-figure">
                   <img
                     className="lakehouse-evidence-image"
-                    src="/airflow-batch-publish-dag.png"
+                    src={airflowDagImageSrc}
                     alt="Airflow graph view for batch_publish_daily DAG run with successful tasks"
                     loading="lazy"
                   />

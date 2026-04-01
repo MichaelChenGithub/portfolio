@@ -1,12 +1,14 @@
 import { NavLink, Link } from 'react-router-dom';
 import { siteMeta } from '../data/portfolio';
 
+const profileImageSrc = `${import.meta.env.BASE_URL}IMG_1598.JPG`;
+
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" to="/">
         <span className="brand-mark">
-          <img src="/IMG_1598.JPG" alt="Michael Chen" />
+          <img src={profileImageSrc} alt="Michael Chen" />
         </span>
         <span className="brand-copy">
           <strong>{siteMeta.name}</strong>
