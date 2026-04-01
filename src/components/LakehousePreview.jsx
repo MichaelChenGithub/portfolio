@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { lakehouseProject } from '../data/portfolio';
+import { lakehouseProject } from '../content/projects';
 import { LakehouseDiagram } from './LakehouseDiagram';
 
 export function LakehousePreview({ showFlow = true }) {
