@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ArticlesPanel } from '../components/ArticlesPanel';
 import { ContactLinks } from '../components/ContactLinks';
 import { LakehousePreview } from '../components/LakehousePreview';
 import { siteMeta, skillSet } from '../data/portfolio';
@@ -41,6 +42,10 @@ export function HomePage() {
             </ul>
           </div>
         </aside>
+      </section>
+
+      <section className="feature-section">
+        <ArticlesPanel />
       </section>
 
       <section className="feature-section">

@@ -1161,6 +1161,62 @@ p {
   color: var(--muted);
 }
 
+.articles-card {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 251, 245, 0.92), rgba(255, 246, 232, 0.98)),
+    radial-gradient(circle at top right, rgba(255, 184, 77, 0.18), transparent 42%);
+}
+
+.articles-header {
+  display: grid;
+  gap: 10px;
+}
+
+.articles-header h2 {
+  max-width: none;
+  margin-bottom: 0;
+  line-height: 1.04;
+}
+
+.articles-topics {
+  display: grid;
+  gap: 18px;
+}
+
+.article-topic {
+  display: grid;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+.article-topic-title {
+  max-width: none;
+  color: var(--text);
+  line-height: 1.08;
+}
+
+.article-bullet-list {
+  margin: 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.article-bullet-list li {
+  line-height: 1.68;
+}
+
+.article-bullet-list a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .supporting-project-card {
   padding: 24px 26px;
 }
@@ -2017,10 +2073,15 @@ p {
     background: rgba(255, 255, 255, 0.02);
   }
 
-  .contact-link-card:hover,
-  .contact-link-card:focus-visible {
-    border-color: rgba(255, 255, 255, 0.14);
-    background: rgba(255, 255, 255, 0.05);
+  .articles-card {
+    background:
+      linear-gradient(180deg, rgba(36, 34, 30, 0.92), rgba(26, 25, 22, 0.98)),
+      radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 42%);
+  }
+
+  .article-topic-title,
+  .article-bullet-list a {
+    color: var(--surface-strong);
   }
 
   .contact-icon {
@@ -2224,6 +2285,7 @@ p {
 
   .hero-copy {
     padding: 20px 20px 18px;
+    align-content: start;
   }
 
   .lakehouse-showcase {
